@@ -14,8 +14,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body class="bg-[#fffcf9] flex items-center justify-start min-h-screen font-rubik flex-col">
-	<header class="flex items-center justify-between w-full p-6 border-b border-[#f6f0eb] bg-white">
-        <svg style="width:200px; height:auto;" viewBox="0 0 500 75" fill="none" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer group">
+	<header class="flex items-center justify-between w-full sm:p-6 p-3 border-b border-[#f6f0eb] bg-white">
+        <svg style="height:auto;" viewBox="0 0 500 75" fill="none" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer group w-[140px] md:w-[200px]">
             <path d="M66.7698 0H42.0371V24.7327H66.7698V0Z" fill="#E32A77"/>
 <path d="M42.037 24.7327H0V49.4654H42.037V24.7327Z" fill="#181028"/>
 <path d="M93.4193 49.4653H41.8115V74.1981H93.4193V49.4653Z" fill="#8961DF"/>
@@ -31,7 +31,7 @@
 <path d="M131.053 29.4767V69.1441H117.363V29.4767H131.053Z" fill="#181028"/>
 <path d="M131.053 9.90234H117.363V23.5919H131.053V9.90234Z" fill="#181028"/>
         </svg>
-        <nav class="flex items-center justify-center gap-10 grow text-[#141f3e] [&>*]:transition-all [&>*]:duration-150 [&>*]:ease-in">
+        <nav class="items-center justify-center gap-10 grow text-[#141f3e] [&>*]:transition-all [&>*]:duration-150 [&>*]:ease-in hidden lg:flex">
             <a href="#" class="text-lg hover:text-[#e32a77]">Home</a>
             <a href="#" class="text-lg hover:text-[#e32a77]">Articles</a>
             <a href="#" class="text-lg hover:text-[#e32a77]">Pricing</a>
@@ -39,16 +39,24 @@
             <a href="#" class="text-lg hover:text-[#e32a77]">Contact</a>
         </nav>
         <div class="flex items-center justify-center gap-4">
-            <button class="bg-[#f6f0eb] px-6 py-3  text-lg text-[#141f3e] rounded-lg hover:bg-[#e2d0bb] transition-all duration-150 ease-in hover:text-white">Log In</button>
-            <button class="bg-[#141f3e] text-white text-lg px-6 py-3 font-[300] rounded-lg hover:bg-[#2c458a] transition-all duration-150 ease-in">Strat Free Trial</button>
+            <button class="bg-[#f6f0eb] md:px-6 md:py-3 px-3 py-2  md:text-lg text-base text-[#141f3e] rounded-lg hover:bg-[#e2d0bb] transition-all duration-150 ease-in hover:text-white">Log In</button>
+            <button class="bg-[#141f3e] text-white md:text-lg text-base md:px-6 md:py-3 px-3 py-2 font-[300] rounded-lg hover:bg-[#2c458a] transition-all duration-150 ease-in">Free Trial</button>
+            <button class="bg-[#141f3e] text-white md:text-lg text-base md:px-6 md:py-3 px-3 py-2 font-[300] rounded-lg hover:bg-[#2c458a] transition-all duration-150 ease-in">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                  </svg>
+            </button>
         </div>
     </header>
-    <section class="w-full mb-4 pb-28 max-w-[1255px] text-[#172144] flex items-center justify-center flex-col gap-8">
-        <h1 class="text-6xl font-bold leading-tight text-center mt-28">
-            A modern way to<br> build websites.
+    <section class="w-full mb-4 md:pb-28 pb-14 max-w-[1255px] text-[#172144] flex items-center justify-center flex-col gap-8">
+        <h1 class="text-2xl font-bold leading-tight text-center md:text-6xl md:mt-28 mt-14">
+            A modern way to<br class="hidden md:inline-block"> build websites.
         </h1>
-        <p class="text-2xl tracking-tighter text-center font-[500]">Empower designers to build professional, custom websites,<br> in a completly visual canvas with no code.</p>
-        <button class="bg-[#141f3e] text-white text-lg px-12 py-6 font-[300] rounded-lg hover:bg-[#2c458a] transition-all duration-150 ease-in">Strat Free Trial</button>
+        <p class="md:text-2xl text-base tracking-tighter text-center font-[500]">Empower designers to build professional, custom websites,<br> in a completly visual canvas with no code.</p>
+        <button class="bg-[#141f3e] text-white text-lg md:px-12 md:py-6 px-6 py-3 font-[300] rounded-lg hover:bg-[#2c458a] transition-all duration-150 ease-in">Strat Free Trial</button>
     </section>
     <main class="w-full bg-white border-t border-[#f5f4eb]">
         <div class="w-full max-w-[1255px] flex items-center justify-center flex-col mx-auto">
@@ -57,7 +65,28 @@
                 <span class="text-base text-[#141f3e]"> We share our thoughs on design</span>
                 <span class="grow h-[1px] bg-[#d3d3d3]"></span>
             </div>
-                
+            <ul class="flex w-full flex-wrap items-center justify-start gap-6 [&>li]:transition-all [&>li]:duration-150 [&>li]:ease-in [&>li]:cursor-pointer mb-20 px-2">
+                <li class="w-full sm:w-[30%] md:w-[22%] min-h-[100px] flex items-start justify-start flex-col self-stretch">
+                    <img src="img01.jpg" class="w-full cursor-pointer">
+                    <h2 class="my-3 text-xl text-[#1e2048] font-semibold">Designing handoff: What engineers really want to see.</h2>
+                    <small>Jul 1, 2020</small>
+                </li>
+                <li class="w-full sm:w-[30%] md:w-[22%] min-h-[100px] flex items-start justify-start flex-col self-stretch">
+                    <img src="img02.jpg" class="w-full cursor-pointer">
+                    <h2 class="my-3 text-xl text-[#1e2048] font-semibold">A comprehensive list of human-computer interactions.</h2>
+                    <small>Jul 1, 2020</small>
+                </li>
+                <li class="w-full sm:w-[30%] md:w-[22%] min-h-[100px] flex items-start justify-start flex-col self-stretch">
+                    <img src="img03.jpg" class="w-full cursor-pointer">
+                    <h2 class="my-3 text-xl text-[#1e2048] font-semibold">Redesigning my site increased sales by over 400% in one week.</h2>
+                    <small>Jul 1, 2020</small>
+                </li>
+                <li class="w-full sm:w-[30%] md:w-[22%] min-h-[100px] flex items-start justify-start flex-col self-stretch">
+                    <img src="img04.jpg" class="w-full cursor-pointer">
+                    <h2 class="my-3 text-xl text-[#1e2048] font-semibold">Why do people hate redesigns?</h2>
+                    <small>Jul 1, 2020</small>
+                </li>
+            </ul>
         </div>
     </main>
 </body>

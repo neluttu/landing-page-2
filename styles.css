@@ -552,6 +552,11 @@ video {
   margin-right: auto;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
@@ -568,8 +573,24 @@ video {
   margin-bottom: 1rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -588,6 +609,10 @@ video {
   display: none;
 }
 
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-1 {
   height: 0.25rem;
 }
@@ -598,6 +623,10 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[100px\] {
+  min-height: 100px;
 }
 
 .w-1 {
@@ -614,6 +643,18 @@ video {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[120px\] {
+  width: 120px;
+}
+
+.w-\[140px\] {
+  width: 140px;
 }
 
 .max-w-\[1255px\] {
@@ -650,6 +691,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-start {
@@ -700,6 +745,10 @@ video {
   align-self: center;
 }
 
+.self-stretch {
+  align-self: stretch;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -710,6 +759,10 @@ video {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border {
@@ -769,6 +822,16 @@ video {
   background-color: rgb(211 211 211 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#242c40\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 44 64 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#2f3651\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 54 81 / var(--tw-bg-opacity));
+}
+
 .p-0 {
   padding: 0px;
 }
@@ -795,6 +858,10 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-5 {
@@ -837,8 +904,22 @@ video {
   padding-right: 3rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .pb-28 {
   padding-bottom: 7rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
 }
 
 .text-center {
@@ -896,6 +977,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -969,6 +1055,11 @@ video {
 .text-\[\#172144\] {
   --tw-text-opacity: 1;
   color: rgb(23 33 68 / var(--tw-text-opacity));
+}
+
+.text-\[\#1e2048\] {
+  --tw-text-opacity: 1;
+  color: rgb(30 32 72 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1052,6 +1143,83 @@ video {
   transition-duration: 300ms;
 }
 
+@media (min-width: 640px) {
+  .sm\:w-\[30\%\] {
+    width: 30%;
+  }
+
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:mt-28 {
+    margin-top: 7rem;
+  }
+
+  .md\:inline-block {
+    display: inline-block;
+  }
+
+  .md\:w-\[22\%\] {
+    width: 22%;
+  }
+
+  .md\:w-\[200px\] {
+    width: 200px;
+  }
+
+  .md\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:pb-28 {
+    padding-bottom: 7rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+}
+
 .\[\&\>\*\]\:transition-all>* {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1063,5 +1231,34 @@ video {
 }
 
 .\[\&\>\*\]\:ease-in>* {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.\[\&\>li\:hover\]\:bg-\[\#2f3651\]>li:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 54 81 / var(--tw-bg-opacity));
+}
+
+.\[\&\>li\]\:cursor-pointer>li {
+  cursor: pointer;
+}
+
+.\[\&\>li\]\:shadow-\[0px_13px_15px_-8px_rgba\(31\2c 36\2c 59\2c 0\.76\)\]>li {
+  --tw-shadow: 0px 13px 15px -8px rgba(31,36,59,0.76);
+  --tw-shadow-colored: 0px 13px 15px -8px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.\[\&\>li\]\:transition-all>li {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.\[\&\>li\]\:duration-150>li {
+  transition-duration: 150ms;
+}
+
+.\[\&\>li\]\:ease-in>li {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
